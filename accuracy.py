@@ -6,7 +6,7 @@ from ultralytics import YOLO
 from sklearn.metrics import classification_report, accuracy_score
 
 # ========== LOAD THE TRAINED YOLOv8 MODEL ==========
-model = YOLO('/model/FDD_yolo_training/yolov8_fdd_model/weights/best.pt')
+model = YOLO('./model/yolov8_fdd_model/weights/best.pt')
 
 # ========== SET THE TEST IMAGE FOLDER ==========
 test_folder = './test/images'  # Path to the folder containing test images

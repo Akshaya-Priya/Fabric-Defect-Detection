@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend-backend communication
 
 # Load the trained YOLO model
-model = YOLO('/model/FDD_yolo_training/yolov8_fdd_model/weights/best.pt')  # Adjust the path
+model = YOLO('./model/yolov8_fdd_model/weights/best.pt')  # Adjust the path
 
 @app.route('/predict', methods=['POST'])
 def predict():
